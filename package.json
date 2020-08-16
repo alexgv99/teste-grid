@@ -1,0 +1,8 @@
+{
+  "name": "teste-grid",
+  "version": "1.0.0",
+  "description": "testes com o grid da planilha e",
+  "main": "index.js",
+  "author": "alexgv",
+  "license": "MIT"
+}

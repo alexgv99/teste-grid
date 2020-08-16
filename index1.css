@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+input {
+  width: 100px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: right;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.economia {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: auto;
+}
+
+.economia .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid #333;
+  background-color: #f5f5f5;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  padding: 10px;
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.economia .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.economia .header .void {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  height: 40px;
+  min-width: 222px;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #f5f5f5;
+}
+
+.economia .header .areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .header .areas .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 90px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.economia .header .total-areas {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  background-color: #f5f5f5;
+  min-width: 110px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.economia .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.economia .container .tiposConstrucao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .container .tiposConstrucao .tipo-construcao {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  line-height: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+  background-color: #f5f5f5;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .titulo-grupo {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-left: 1px solid #333;
+  line-height: 3rem;
+  border-top: 1px solid #333;
+  text-align: center;
+  background-color: #f5f5f5;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 34px;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo .tipos-areas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo .tipos-areas .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo .tipos-areas .area .titulo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 120px;
+  padding: 0px 10px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #f5f5f5;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 83px;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo .tipos-areas .area .areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .container .tiposConstrucao .resto-tipo-construcao .grupos .grupo .resto-grupo .tipos-areas .area .total-areas {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 41px;
+  background-color: #f5f5f5;
+  min-width: 100px;
+  max-width: 110px;
+}
+
+.economia .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.economia .footer .void {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  height: 40px;
+  min-width: 222px;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background-color: #f5f5f5;
+}
+
+.economia .footer .areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.economia .footer .areas .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.economia .footer .total-areas {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 41px;
+  background-color: #f5f5f5;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}

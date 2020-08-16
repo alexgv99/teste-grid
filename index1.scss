@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+html {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+$backcolor: #f5f5f5;
+$frontcolor: #333;
+$cellheight: 40px;
+$cellwidth: 100px;
+
+
+input {
+	width: $cellwidth;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: right;
+	border-bottom: 1px solid $frontcolor;
+	border-right: 1px solid $frontcolor;
+}
+
+.economia {
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	// width: 100%;
+	overflow-x: auto;
+
+	.title {
+		display: flex;
+		justify-content: center;
+		flex-grow: 1;
+	
+		border: 1px solid $frontcolor;
+		background-color: $backcolor;
+	
+		position: sticky;
+		left: 0;
+	
+		padding: 10px;
+		color: $frontcolor;
+		font-size: 1.5em;
+		font-weight: 700;
+		text-transform: uppercase;
+		// border: 5px solid pink;
+	}
+	
+	.header {
+		display: flex;
+		background-color: $backcolor;
+		.void {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			left: 0;
+			height: $cellheight;
+			min-width: 222px;
+			border-right: 1px solid $frontcolor;
+			border-left: 1px solid $frontcolor;
+			border-bottom: 1px solid $frontcolor;
+			background-color: $backcolor;
+		}
+		.areas {
+			display: flex;
+			flex-grow: 1;
+
+			.area {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 90px;
+				padding: 10px;
+				background-color: $backcolor;
+				border-right: 1px solid $frontcolor;
+				border-bottom: 1px solid $frontcolor;
+			}
+
+		}
+
+		.total-areas {
+			position: sticky;
+			right: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: $cellheight;
+			background-color: $backcolor;
+			min-width: $cellwidth +10px;
+			border-right: 1px solid $frontcolor;
+			border-bottom: 1px solid $frontcolor;
+		}
+	}
+
+	.container {
+		display: flex;
+
+		.tiposConstrucao {
+			display: flex;
+			flex-grow: 1;
+			.tipo-construcao {
+				writing-mode:vertical-rl;
+				transform:rotate(180deg); 
+				border-right: 1px solid $frontcolor;
+				border-left: 1px solid $frontcolor;
+				line-height: 2rem;
+				text-align: center;
+				border-top: 1px solid $frontcolor;
+				background-color: $backcolor;
+				position: sticky;
+				left: 0;
+			}
+			.resto-tipo-construcao {
+				flex-grow: 1;
+		
+				.grupos {
+					display: flex;
+					flex-direction: column;
+					.grupo {
+						display: flex;
+						.titulo-grupo {
+							writing-mode:vertical-rl;
+							transform:rotate(180deg); 
+							border-left: 1px solid $frontcolor;
+							line-height: 3rem;
+							border-top: 1px solid $frontcolor;
+							text-align: center;
+							background-color: $backcolor;
+							position: sticky;
+							left: 34px;
+						}
+		
+						.resto-grupo {
+							flex-grow: 1;
+							.tipos-areas {
+								display: grid;
+								grid-template-rows: 1fr 1fr 1fr;
+		
+								.area {
+									display: flex;
+									background-color: $backcolor;
+									
+									.titulo-area {
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										height: $cellheight;
+										width: 120px;
+										padding: 0px 10px;
+										border-right: 1px solid $frontcolor;
+										border-bottom: 1px solid $frontcolor;
+										background-color: $backcolor;
+										position: sticky;
+										left: 83px;
+			
+									}
+									.areas {
+										display: flex;
+										flex-grow: 1;
+									}
+		
+									.total-areas {
+										position: sticky;
+										right: 0;
+										display: flex;
+										flex-grow: 1;
+										height: $cellheight +1px;
+										background-color: $backcolor;
+										min-width: $cellwidth;
+										max-width: $cellwidth +10px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		display: flex;
+			background-color: $backcolor;
+			.void {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			left: 0;
+			height: $cellheight;
+			min-width: 222px;
+			border-right: 1px solid $frontcolor;
+			border-left: 1px solid $frontcolor;
+			border-bottom: 1px solid $frontcolor;
+			background-color: $backcolor;
+		}
+		.areas {
+			display: flex;
+			flex-grow: 1;
+
+			.area {
+				display: flex;
+			}
+
+		}
+
+		.total-areas {
+			position: sticky;
+			right: 0;
+			display: flex;
+			flex-grow: 1;
+			height: $cellheight +1px;
+			background-color: $backcolor;
+			justify-content: flex-end;
+			// min-width: $cellwidth;
+		}
+	}
+
+}
